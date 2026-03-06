@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Toys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <img class="logo" src="logo.jpeg" alt="Special Toys">
+    
+    <label class="search" aria-label="Buscar productos" id="homeSearchLabel">
+      <input type="text" placeholder="Pokémon">
+      <span>🔍</span>
+    </label>
+
+    <div class="header-actions">
+      <span>🌐 ES/MXN</span>
+      <span>👤</span>
+      <span>🛒</span>
+      <span class="badge">0</span>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="./">Hogar</a>
+    <a href="?tema=todos">Todos los productos</a>
+  </nav>
+
+  <main>
+    <section class="grid" id="homeSection" aria-label="Colecciones destacadas">
+      <article class="card">
+        <a class="card-link" href="?tema=pokemon">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2409/27/photo/EM001.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Pokémon"></div>
+          <h3>Pokémon</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=ninjago">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2503/22/photo/Ninjago.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Ninjago"></div>
+          <h3>Ninjago</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=star-wars">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2503/22/photo/StarWars.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Star Wars"></div>
+          <h3>Star Wars</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=marvel">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2503/22/photo/Marvel.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Marvel"></div>
+          <h3>Marvel</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=dc">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2503/22/photo/DC.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección DC"></div>
+          <h3>DC</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=demon-slayer">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2409/27/photo/WM2171.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Demon Slayer"></div>
+          <h3>Demon Slayer</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=jujutsu-kaisen">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2409/27/photo/WM2353.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Jujutsu Kaisen"></div>
+          <h3>Jujutsu Kaisen</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=naruto">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2409/27/photo/WM2082.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección Naruto"></div>
+          <h3>Naruto</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=one-piece">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2409/27/photo/DY601.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Colección One Piece"></div>
+          <h3>One Piece</h3>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="?tema=todos">
+          <div class="avatar"><img src="https://ueeshop.ly200-cdn.com/u_file/UPBD/UPBD111/2506/21/photo/more.png?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_0,w_164" alt="Todas las colecciones"></div>
+          <h3>Toda la colección</h3>
+        </a>
+      </article>
+    </section>
+
+    <section class="collection-page" id="collectionSection" hidden>
+      <p class="breadcrumb">Inicio &gt; Todos los productos &gt; <span id="breadcrumbTheme">Colección</span></p>
+      <div class="heading-row">
+        <h1 id="themeTitle">Colección</h1>
+        <p class="sort">Ordenar por: Todo</p>
+      </div>
+      <label class="collection-search" aria-label="Buscar en colección">
+        <input id="searchInput" type="text" placeholder="Buscar en la colección">
+        <span>🔍</span>
+      </label>
+      <section class="product-grid" id="productGrid" aria-label="Productos de colección"></section>
+    </section>
+  </main>
+
+  <div class="floating">
+    <button type="button" aria-label="Correo">✉️</button>
+    <button type="button" aria-label="Subir">⌃</button>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
